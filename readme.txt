@@ -2,10 +2,10 @@
 
 1) Резвернуть zen_tmp.dump
 cp zen.dump /tmp
-create_db zen;
+CREATE_DB zen;
 CREATE USER my_user WITH ENCRYPTED PASSWORD 'my_user_password';
 GRANT ALL PRIVILEGES ON DATABASE zen TO my_user;
-pg_restore -d zen /tmp/zen.dump
+PG_RESTORE -d zen /tmp/zen.dump
 GRANT USAGE, SELECT ON SEQUENCE dash_visits_record_id_seq TO my_user;
 GRANT USAGE, SELECT ON SEQUENCE dash_engagement_record_id_seq TO my_user;
 
