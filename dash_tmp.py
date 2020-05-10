@@ -20,7 +20,7 @@ db_config = {'user': 'my_user',
              'pwd': 'my_user_password',
              'host': 'localhost',
              'port': 5432,
-             'db': 'zen'}
+             'db': 'db_name'}
 engine = create_engine('postgresql://{}:{}@{}:{}/{}'.format(db_config['user'],
                                                             db_config['pwd'],
                                                             db_config['host'],
@@ -45,7 +45,7 @@ dash_engagement = pd.io.sql.read_sql(query, con = engine)
 
 
 note = '''
-          Анализ пользовательского взаимодействия с карточками статей
+          Анализ пользовательского взаимодействия с карточками
        '''
 
 # задаём лейаут
@@ -54,7 +54,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets,compress=Fal
 app.layout = html.Div(children=[  
     
     # формируем html
-    html.H1(children = 'Дашборд для Яндекс Дзен'),
+    html.H1(children = 'Дашборд'),
 
     html.Br(),
 
