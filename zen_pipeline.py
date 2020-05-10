@@ -46,7 +46,7 @@ if __name__ == "__main__":
                  'pwd': 'my_user_password',
                  'host': 'localhost',
                  'port': 5432,
-                 'db': 'zen'}
+                 'db': 'db_name'}
 
     connection_string = 'postgresql://{}:{}@{}:{}/{}'.format(db_config['user'],
                                                              db_config['pwd'],
