@@ -1,4 +1,4 @@
 # ELT-pipeline_and_Dashboard
 
-Создание интерактивного дашборда и ELT-pipeline для ежедневного обмена.
+Create an interactive dashboard and ELT pipeline for daily sharing.
 
